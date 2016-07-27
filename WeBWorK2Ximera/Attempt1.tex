@@ -1,0 +1,45 @@
+\documentclass{ximera}
+\title{Playing with the conversion from WeBWorK to Ximera...}
+\author{Angela}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+Starting from the tex file downloaded from WeBWorK:
+\begin{problem}
+{\bf 3. {\footnotesize (1 point) \path|Michigan/calc/6e/Chap1Sec4/Q14.pg|}}\newline Solve for \(x\): 
+\(5 e^{7 x} = 8 e^{8 x}\)
+
+\par 
+\(x =\) \mbox{\parbox[t]{17.5ex}{\hrulefill}}
+
+\par{\small{\it Correct Answers:}
+\vspace{-\parskip}\begin{itemize}
+\item\begin{verbatim}[ln(5)-ln(8)]/(8-7)\end{verbatim}
+\end{itemize}}\par
+
+\end{problem}
+
+Small changes to convert to Ximera
+\begin{problem}
+%{\bf 3. {\footnotesize (1 point) \path|Michigan/calc/6e/Chap1Sec4/Q14.pg|}}\newline   
+%%comment out from begining through newline
+Solve for \(x\): 
+\(5 e^{7 x} = 8 e^{8 x}\)
+
+%\par 
+%% comment out formatting
+\(x =\answer{[ln(5)-ln(8)]/(8-7)}\) 
+%\mbox{\parbox[t]{17.5ex}{\hrulefill}}
+%%replace mbox outside math mode with \answer blank including correct answer from below  Then comment out the rest.
+
+%\par{\small{\it Correct Answers:}
+%\vspace{-\parskip}\begin{itemize}
+%\item\begin{verbatim}[ln(5)-ln(8)]/(8-7)\end{verbatim}
+%\end{itemize}}\par
+
+\end{problem}
+
+\end{document}
